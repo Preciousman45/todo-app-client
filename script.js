@@ -2,7 +2,7 @@ const taskForm = document.getElementById('task-form');
 const taskList = document.getElementById('task-list');
 
 // Replace this with your backend URL if hosted
-const API = 'https://todo-app-client-89eu.onrender.com';
+const API = 'https://render-deployment-7cpl.onrender.com/tasks';
 
 document.addEventListener('DOMContentLoaded', loadTasks);
 
