@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -23,6 +23,42 @@
     <ul id="task-list"></ul>
   </div>
 
+
+
+  <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My TODO App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>My TODO List</h1>
+
+    <form id="task-form">
+      <input type="text" id="title" placeholder="What do you need to do?" required />
+      <input type="datetime-local" id="scheduledTime" required />
+      <select id="priority">
+        <option value="low">🟢 Low</option>
+        <option value="medium">🟡 Medium</option>
+        <option value="high">🔴 High</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <ul id="task-list"></ul>
+  </div>
+
+  <audio id="alarm-sound" src="/alarm.mp3" preload="auto"></audio>
   <script src="script.js"></script>
 </body>
 </html>
